@@ -20,4 +20,4 @@ with mlflow.start_run():
     mlflow.log_param("n_estimators", 100)
     mlflow.log_metric("mse", mse)
     mlflow.sklearn.log_model(model, "model")
-    print(f"Model logged with MSE: {mse:.3f}")
+    print(f"Model logged in run with MSE: {mse:.3f}")
